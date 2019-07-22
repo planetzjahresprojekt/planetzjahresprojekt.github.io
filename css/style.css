@@ -1,0 +1,66 @@
+ /*@font-face {
+     font-family: Nexa;
+     src: url('Nexa-Regular.otf');
+ }
+
+ @font-face {
+     font-family: Nexa;
+     font-weight: bold;
+     src: url('Nexa-Bold.otf');
+ } */
+
+ html,
+ body {
+     height: 100%;
+ }
+
+ #page-content {
+     flex: 1 0 auto;
+ }
+
+ #sticky-footer {
+     flex-shrink: none;
+ }
+
+ h1 {
+     font-family: Nexa, sans-serif;
+ }
+
+ p {
+     font-family: Nexa, sans-serif;
+     font-weight: 600;
+ }
+
+ nav {
+     font-family: Nexa, sans-serif;
+ }
+
+
+ .willkommen {
+     font-size: 20px;
+     text-align: justify;
+ }
+
+ .bildinhalt {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 75%;
+ }
+
+ .ueberuns {
+     text-align: center;
+
+ }
+
+ .team {
+     text-align: center;
+ }
+
+ .ueberunsinfo {
+     padding-left: 10%;
+     padding-right: 10%;
+     font-size: 18px;
+ }
+
+
