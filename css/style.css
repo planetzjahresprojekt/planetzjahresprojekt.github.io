@@ -1,62 +1,63 @@
-
-@font-face { 
-    font-family: "FuturaBold";
-    src: url(fonts/FuturaPTDemi.otf);
-    
-}
-
-@font-face { 
-    font-family: "FuturaBook";
-    src: url("fonts/FuturaPTBook.woff");
-    src: url("fonts/FuturaPTBook.woff") format ("woff");
-}
-
- html,
- body {
-     height: 100%;
- }
-
- #page-content {
-     flex: 1 0 auto;
- }
-
- #sticky-footer {
-     flex-shrink: none;
- }
-
- h1 {
-     font-family: 'FuturaBold', sans-serif;
-     
- }
-
- h2 {
-     font-family: 'FuturaBold', sans-serif;
-     
- }
-
- p {
-     font-family: 'FuturaBook', sans-serif;
+@font-face {
+    font-family: "NeueMontrealBold";
+    src: url("fonts/NeueMontreal-Bold.woff");
 
 }
 
- nav {
-     font-family: 'FuturaBook', sans-serif;
- } 
+@font-face {
+    font-family: "NeueMontrealMedium";
+    src: url("fonts/NeueMontreal-Regular.woff");
+}
+
+
+body {
+  /*background: url("image/hintergrund.png") repeat center; */
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+}
+
+h1 {
+    font-family: 'NeueMontrealBold', sans-serif;
+
+}
+
+h2 {
+    font-family: 'NeueMontrealBold', sans-serif;
+
+}
+
+p {
+    font-family: 'NeueMontrealMedium', sans-serif;
+
+}
+
+nav {
+    font-family: 'NeueMontrealMedium', sans-serif;
+}
 
 /*-------- Navbar ---------*/
 
 .navbar-custom {
     background-color: #110d29;
 }
+
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
 }
+
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
 }
+
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
@@ -65,121 +66,53 @@
 
 /*---------------------------*/
 
- .willkommen {
-     font-size: 20px;
-     text-align: justify;
-     font-family: myriad-pro, sans-serif;
- }
+.willkommen {
+    font-size: 20px;
+    text-align: justify;
+}
 
- .bildinhalt {
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 75%;
- }
+.bildinhalt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
 
- .ueberuns {
-     text-align: center;
+.bildergallerie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
- }
+.ueberuns {
+    text-align: center;
 
- .team {
-     text-align: center;
- }
+}
 
- .ueberunsinfo {
-     padding-left: 10%;
-     padding-right: 10%;
-     font-size: 22px;
- }
+.team {
+    text-align: center;
+}
+
+.ueberunsinfo {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 18px;
+}
 
 .footer-custom {
     background-color: #110d29;
 }
 
 
- html {
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-/*-----------  Lightbox -- -----------*/
-
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+.gallerie {
+    padding-left:  2%;
+    padding-right: 2%;
 }
 
-#myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
 
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
