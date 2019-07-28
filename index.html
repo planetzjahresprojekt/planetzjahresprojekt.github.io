@@ -63,7 +63,7 @@
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor.</p>
             </div>
             <div class="col-sm-6" id="bildinhalt">
-                <img src="css/image/willkommen.png" class="bildinhalt" alt="Responsive image">
+                <img src="css/image/planet1.png" class="bildinhalt" alt="Responsive image">
             </div>
         </div>
     </div>
@@ -96,7 +96,7 @@
         </div>
     </div>
 
-    <!-- Über Uns Abschnitt -->
+<!-- Über Uns Abschnitt -->
 
 <div class="wrapper">
         <div class="divider div-transparent div-dot"></div>
@@ -172,56 +172,71 @@
 
     </div>
     <br>
+    <!--
     <div class="gallerie">
         <div class="row">
 
-            <!-- Grid column -->
+            
             <div class="col-md-12 mb-3">
-
-                <img src="css/image/prototyp1.jpeg" class="img-fluid z-depth-1" alt="Responsive image">
+                <div class="view overlay zoom">
+  <img src="css/image/prototyp1.jpeg" alt="zoom" width="100%">
+  <div class="mask flex-center waves-effect waves-light">
+    <p class="white-text">Zoom effect</p>
+  </div>
+</div>
+ 
 
             </div>
-            <!-- Grid column -->
+            
 
         </div>
-        <!-- Grid row -->
-
-        <!-- Grid row -->
+      
         <div class="row">
 
-            <!-- Grid column -->
+         
             <div class="col-lg-4 col-md-12 mb-3">
 
-                <img src="css/image/prototyp2.jpeg" class="img-fluid z-depth-1" alt="Responsive image">
+                <img src="css/image/prototyp2.jpeg" class="img-fluid z-depth-1 zoom" alt="Responsive image">
 
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
+        
             <div class="col-lg-4 col-md-6 mb-3">
 
-                <img src="css/image/prototyp3.jpeg" class="img-fluid z-depth-1" alt="Responsive image">
+                <img src="css/image/prototyp3.jpeg" class="img-fluid z-depth-1 zoom" alt="Responsive image">
 
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
+      
             <div class="col-lg-4 col-md-6 mb-3">
 
-                <img src="css/image/prototyp4.jpeg" class="img-fluid z-depth-1" alt="Responsive image">
+                <img src="css/image/prototyp4.jpeg" class="img-fluid z-depth-1 zoom" alt="Responsive image">
 
             </div>
-            <!-- Grid column -->
+           
 
         </div>
     </div>
 
     <div class="wrapper">
         <div class="divider div-transparent div-dot"></div>
-    </div>
+    </div> -->
 
-
-
+    <div class="row gallerie">
+  <div class="col-sm-3"><img src="css/image/prototyp1.jpeg" class="img-fluid" onclick="myFunction(this);"> </div>
+        <br>
+  <div class="col-sm-3"><img src="css/image/prototyp2.jpeg" class="img-fluid" onclick="myFunction(this);"></div>
+        <br>
+  <div class="col-sm-3"><img src="css/image/prototyp3.jpeg" class="img-fluid" onclick="myFunction(this);"></div>
+        <br>
+  <div class="col-sm-3"><img src="css/image/prototyp4.jpeg" class="img-fluid" onclick="myFunction(this);"></div>
+        <br>
+</div>
+    <br>
+    
+  <div class="container">
+ 
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div> 
     <br>
     <footer id="sticky-footer" class="py-4 footer-custom text-white-50">
         <div class="container text-center">
