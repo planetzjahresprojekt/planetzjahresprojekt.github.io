@@ -11,7 +11,7 @@
 
 
 body {
-  /*background: url("image/hintergrund.png") repeat center; */
+
 }
 
 #page-content {
@@ -207,3 +207,8 @@ html {
 }
 
 
+
+.luft {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
